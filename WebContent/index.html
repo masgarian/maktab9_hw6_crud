@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css"> 
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-theme.css">
+<title>My CRUD Web UI</title>
+</head>
+
+<body>
+	<div class="container">
+	<h2>Student Servlet CRUD</h2>
+		<table class="table table-striped" name="table">
+			<tr>
+				<th>ID</th>
+				<th>Name</th>
+				<th>Department</th>
+				<th>TeacherID</th>
+				<th></th>
+			</tr>
+			<tr>
+				<form class="form-inline" id="form1"  >
+					<th><input name="id" type="text" class="form-control"></th>
+					<th><input name="name" type="text" class="form-control"></th>
+					<th><input name="department" type="text" class="form-control"></th>
+					<th><input name="teacherId" type="text" class="form-control"></th>
+				</form>
+			</tr>
+				
+		</table>
+		<button type="submit" class="btn btn-primary" form="form1" method="GET" formaction="add" >Add</button>
+		<button type="submit" class="btn btn-success" form="form1" method="GET" formaction="load">Load</button>
+		<button type="submit" class="btn btn-danger" form="form1" method="GET" formaction="del">Delete</button>
+		<button type="submit" class="btn btn-warning" form="form1"method="GET" formaction="up">Edit</button>
+<br>
+<br>
+<h2>Teacher Servlet CRUD</h2>
+		<table class="table table-striped" name="table2">
+			<tr>
+				<th>ID</th>
+				<th>Name</th>
+				<th>address</th>
+			</tr>
+			<tr>
+				<form class="form-inline" id="form2"  >
+					<th><input name="id" type="text" class="form-control"></th>
+					<th><input name="name" type="text" class="form-control"></th>
+					<th><input name="address" type="text" class="form-control"></th>
+				</form>
+			</tr>
+				
+		</table>
+		<button type="submit" class="btn btn-primary" form="form2" method="GET" formaction="tadd" >Add</button>
+		<button type="submit" class="btn btn-success" form="form2" method="GET" formaction="tload">Load</button>
+		<button type="submit" class="btn btn-danger" form="form2" method="GET" formaction="tdel">Delete</button>
+		<button type="submit" class="btn btn-warning" form="form2"method="GET" formaction="tup">Edit</button>
+
+	</div>
+
+
+</body>
+</html>
